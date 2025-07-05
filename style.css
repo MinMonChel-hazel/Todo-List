@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: rgb(162, 162, 162);
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+.box {
+    border: 3px solid rgb(112, 104, 104);
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    background-color: rgb(237, 236, 236);
+    padding: 20px;
+}
+
+.box .heading {
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+    padding-bottom: 20px;
+}
+
+.todos {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.inputText {
+    flex-basis: 80%;
+    border: 2px solid salmon;
+    border-right: none;
+    background: transparent;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 7px;
+    font-size: 15px;
+}
+
+.box .addBtn {
+    flex-basis: 20%;
+    background-color: rgb(247, 210, 206);
+    border: 3px solid salmon;
+    color: black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 16px;
+}
+
+.todo-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-items {
+    display: flex;
+    background-color: darkgray;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.todo-items .todoItemText {
+    flex-basis: 40%;
+}
+
+.todo-items .btn {
+    flex-basis: 60%;
+    margin-right: 5px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+    font-size: 14px;
+}
+
+.completed {
+    text-decoration: line-through;
+}
